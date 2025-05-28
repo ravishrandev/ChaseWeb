@@ -1,5 +1,10 @@
 import './globals.css';
+import { Inter } from 'next/font/google';
 
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
 
 export const metadata = {
   title: "CHASEBUILD",
@@ -13,9 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen font-sans antialiased">
-        <main className="min-h-screen w-screen overflow-hidden">{children}</main>
-
+      <body className={`${inter.variable} font-inter`}>
+        <main className="min-h-screen w-screen overflow-hidden">
+          {children}
+        </main>
       </body>
     </html>
   );
