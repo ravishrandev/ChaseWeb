@@ -6,7 +6,7 @@ const Hero = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setOpacity(1); // animate to 30%
+      setOpacity(0.9); // animate to 30%
     }, 100);
 
     return () => clearTimeout(timeout);
@@ -26,7 +26,7 @@ const Hero = () => {
 
   {/* 📍 blue Overlay */}
   <div
-    className="absolute top-0 left-0 w-full h-full bg-neutral-100 transition-opacity duration-[5000ms] ease-out z-10"
+    className="absolute top-0 left-0 w-full h-full bg-neutral-100 transition-opacity duration-[6000ms] ease-out z-10"
     style={{ opacity }}
   />
 
