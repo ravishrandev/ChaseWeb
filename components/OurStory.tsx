@@ -1,7 +1,7 @@
 'use client';
 const OurStory = () => {
     return (
-      <section className="w-full pt-80 pl-40">
+      <section className="w-full pt-80 pl-40 ">
         <div className="flex">
           {/* Title section - 1/3 width */}
           <div className="w-1/3">
@@ -11,7 +11,7 @@ const OurStory = () => {
               sm:text-[10vw]
               md:text-[8vw]
               lg:text-[6vw]
-              xl:text-[150px]
+              xl:text-[130px]
             ">
               {/* Shadow Layer */}
               <span className="absolute -z-0 select-none text-[#B0FE00]
