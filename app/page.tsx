@@ -3,7 +3,7 @@ import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import GetInvolved from '@/components/GetInvolved';
 import Statistic from "@/components/Statistic";
-
+import OurStory from "@/components/OurStory";
 
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
     <Hero />
     <Navbar />
     <Statistic />
+    <OurStory />
     <GetInvolved />
     
   </main>

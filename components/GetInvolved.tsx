@@ -59,17 +59,24 @@ const GetInvolved = () => {
                             <span className="animate-pulse">|</span>
                         )}
                     </p>
-                    <h2 className='text-4xl lg:text-6xl font-bold mb-6 relative leading-tight'>
-                        {/* Shadow Layer */}
-                        <span className="absolute -z20 select-none text-[#153b62] opacity-40
-                            left-[1.8vw] top-[1.2vw]
-                            lg:left-2 lg:top-2
-                        ">
-                            KEEN ON VOLUNTEERING?
-                        </span>
-                        {/* Main Text Layer */}
-                        <span className="text-[#B0FE00] select-none">KEEN ON VOLUNTEERING?</span>
-                    </h2>
+                    <h2 className='relative font-black leading-none
+                    text-4xl lg:text-6xl mb-6
+                '>
+                    {/* Shadow Layer */}
+                    <span className="absolute -z-10 select-none text-[#B0FE00]
+                        left-[0.8vw] top-[0.5vw]
+                        sm:left-[0.6vw] sm:top-[0.4vw]
+                        md:left-[0.4vw] md:top-[0.3vw]
+                        lg:left-2 lg:top-2
+                    ">
+                        KEEN ON<br/>VOLUNTEERING?
+                    </span>
+                    
+                    {/* Main Text Layer */}
+                    <span className="text-[#153b62] select-none left-5">
+                        KEEN ON<br/>VOLUNTEERING?
+                    </span>
+                </h2>
                     <p className='mb-8 text-lg lg:text-xl leading-relaxed text-gray-700 max-w-2xl'>
                         CHASE is looking for new mentors and committee members with a passion for community health.
                     </p>
