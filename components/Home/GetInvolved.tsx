@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 // Import custom CSS
-import '../app/components.css';
+import '../../app/components.css';
 
 const GetInvolved = () => {
     const [isVisible, setIsVisible] = useState(false);
