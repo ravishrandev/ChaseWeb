@@ -2,7 +2,7 @@
 
 const OurStory = () => {
   return (
-    <section className="w-full pt-40 md:pt-102 lg:pt-80 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40">
+    <section className="w-full pt-40 md:pt-52 lg:pt-80 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40">
       {/* Responsive layout: column on mobile, row on medium+ */}
       <div className="flex flex-col md:flex-row">
         
