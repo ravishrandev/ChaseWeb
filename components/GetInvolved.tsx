@@ -73,7 +73,7 @@ const GetInvolved = () => {
                     </span>
                     
                     {/* Main Text Layer */}
-                    <span className="text-[#153b62] select-none left-5">
+                    <span className="text-[#153b62] select-none">
                         KEEN ON<br/>VOLUNTEERING?
                     </span>
                 </h2>
