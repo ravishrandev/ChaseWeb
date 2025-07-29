@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
   // Step 1: State to track if mobile menu is open
@@ -22,24 +23,26 @@ const Navbar = () => {
           
           {/* Step 4: Logo */}
           <div className="flex-shrink-0">
-            <span className="text-black text-xl font-bold">CHASE</span>
+            <Link href="/" className="text-black text-xl font-bold">
+              CHASE
+            </Link>
           </div>
 
           {/* Step 5: Desktop Menu (hidden on mobile) */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a 
-                href="#home" 
+              <Link 
+                href="/" 
                 className="text-black hover:text-[#B0FE00] transition-colors duration-200 font-medium"
               >
                 Home
-              </a>
-              <a 
-                href="#about" 
+              </Link>
+              <Link 
+                href="/about" 
                 className="text-black hover:text-[#B0FE00] transition-colors duration-200 font-medium"
               >
                 About
-              </a>
+              </Link>
               <a 
                 href="#contact" 
                 className="text-black hover:text-[#B0FE00] transition-colors duration-200 font-medium"
@@ -111,20 +114,20 @@ const Navbar = () => {
       {/* Step 8: Mobile menu dropdown */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-neutral-100 border-t border-gray-200">
-          <a
-            href="#home"
+          <Link
+            href="/"
             onClick={closeMenu}
             className="text-black hover:text-[#B0FE00] hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            href="/about"
             onClick={closeMenu}
             className="text-black hover:text-[#B0FE00] hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
           >
             About
-          </a>
+          </Link>
           <a
             href="#contact"
             onClick={closeMenu}
